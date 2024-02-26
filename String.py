@@ -1,6 +1,10 @@
 str = "pawan bisht IS my Name is me."
 str2 = "HAD"
+str3 = "had"
 # print(str)
+
+print(str[6:12]+"single")                 # update string
+print(str2==str3)                         # string equal or not
 
 # print(str.capitalize())                 # only 1st charater of string is Capitalized and other are small
 # print(str.title())                      # every character starts with upper case
@@ -37,7 +41,7 @@ str2 = "HAD"
 
 # print(str.replace('pawan', str2))        # replace with other string
 
-print(str.split())                       # return the list....break into the List
+# print(str.split())                       # return the list....break into the List
 
 # print(str.lstrip('p'))                   # left side p is trim
 # print(str.strip())                       # left and right side spaces are removed

@@ -53,7 +53,7 @@
 
 
 
-#....separator {sep="some_think"}   {end="same_think"}.....
+# # ....separator {sep="some_thing"}   {end="same_thing"}.....
 # print("my name is \"PAWAN\"")
 # print("my", "name", "is", sep="....")
 # print("hey", "pawan", end="||")
@@ -61,7 +61,7 @@
 
 
 
-#......change upper() or lower() case
+# #......change upper() or lower() case
 # name = "Pawan Bisht"
 # l = name.upper()
 # u = name.lower()
@@ -71,18 +71,18 @@
 
 
 
-#.........count().........
+# .........count().........
 # name = "Pawan Bisht"
 # n = name.count("a")
 # m = name.count("B")
 # print(f"{n},, {m}")
-# print("Pawan".count("a"))
+# print("Pawana".count("a"))
 
 
 
 
 
-#......to check how many function in perticular object.......
+# #......to check how many function in perticular object.......
 # print(dir(str))
 
 
@@ -91,11 +91,53 @@
 
 
 #.........ramdom module and their function........
-import random
+# import random
 
-random_int = random.randint(1,10)                   # generate random int number
-random_f = random.random()                          # generate random floating num but (0 -- 1)
-random_f2 = random.random() * 10                    # generate 0.0** -- 9.0**
-print(random_int)
-print(random_f)
-print(random_f2)
+# random_int = random.randint(1,10)                   # generate random int number
+# random_f = random.random()                          # generate random floating num but (0 -- 1)
+# random_f2 = random.random() * 10                    # generate 0.0** -- 9.0**
+# print(random_int)
+# print(random_f)
+# print(random_f2)
+
+# or.........
+# from random import choice, randint
+# li = [1,2,3,4,5]
+# print(choice(li))
+# print(randint(100,200))
+
+
+
+
+# # access local varible out side by 'global' keyword ...or... change global variable
+# # x= 2
+# def fun():
+#     global x
+#     x = 300
+#     print(x)
+# fun()
+# print(x)            # print local varible
+
+
+
+
+# # date 
+# from datetime import date
+
+# x = date.today()
+# print(x)
+# print(x.month)
+# print(x.day)
+
+
+
+#.......Math module.........
+import math
+# from math import function
+
+print(math.factorial(5))            # 120
+print(math.sqrt(16))                # 4.0
+print(math.ceil(3.2))               # 4
+print(math.floor(3.2))              # 3
+print(math.log(10))                 # 2.302..
+print(math.pow(2,4))                # 16

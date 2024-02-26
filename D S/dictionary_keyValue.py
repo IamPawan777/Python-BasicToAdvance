@@ -1,9 +1,13 @@
 # #..........access.....override.....new element.......
 # name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
 # print(name)                     # access as map 
-# print(name[2])                  # access by key........
-# name[1] = 11111                 # can change/override....
+
+# print(name[2])                  # access values by key........
+# print(name.get(2))              # OR...access values by key........
+
+# name[1] = 11111                 # can change / update / override....
 # name[5] = 11111                 # new key value created....
+# name.update({2:"AAAAAA"})       # OR... update / overide
 # print(name)
 
 
@@ -15,7 +19,7 @@
 
 
 
-# #...........keys().........
+# #...........keys()........keys of list.
 # name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
 # x = name.keys()
 # print(x)
@@ -23,7 +27,7 @@
 
 
 
-# # ...........values().........
+# # ...........values().......values of list..
 # name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
 # x = name.values()
 # print(x)
@@ -32,14 +36,12 @@
 
 
 
-# #...........pop().........
-# name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
-# x = name.pop(2)
-# print(x)            #..pop()  item
-# print(name)
-
-
-
+#...........pop().....del.......
+name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
+del name[1]             # ..or..
+x = name.pop(2)         # delete by key
+print(x)            #..pop()  item
+print(name)
 
 
 
@@ -69,7 +71,7 @@
 
 
 
-# #...........get()......value at perticular key.....
+# #...........get().....access value at perticular key.....
 # name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
 # x = name.get(3)
 # print(x)
@@ -95,13 +97,81 @@
 
 
 # #...........fromkeys()....  create new key-value but value will be same.......
-x = {"k1", "k2", 3}             # keys
-y = "Hari"                      # value
-dictionary = dict.fromkeys(x,y)
-print(dictionary)
+# x = {"k1", "k2", 3}             # keys
+# y = "Hari"                      # value
+# dictionary = dict.fromkeys(x,y)
+# print(dictionary)
 
 
 
+
+
+
+# # nested dictionary........
+# student_scores = {"pawan": 77, "Harry": 12, "Radha": 98, "Bawana": 51,}
+
+# student_grade = {}
+
+# for i in student_scores:               # 'i' is str
+#     score = student_scores[i]           # change to int 'score' is int
+#     if score > 90:
+#         student_grade[i] = "A+"
+#     elif score > 70:
+#         student_grade[i] = "A"
+#     elif score > 60:
+#         student_grade[i] = "B"
+#     elif score > 50:
+#         student_grade[i] = "C"
+#     else:
+#         student_grade[i] = "Fail"
+
+# print(student_grade)
+
+
+
+
+
+# #  nesting.........
+# std = {
+#     "ram": {"sub": ["hindi", "englisd", "maths",]},
+#     "SLIET": {
+#         "name": {
+#             "Pawan": {"marks": [12,45,67], "age": 12},   
+#             "Radha": {"marks": [33,11], "age": 12}  
+#         } 
+#     },
+#     "MMMUT": {
+#         "name": {
+#             "Harry": {"Marks": [3,6,12,], "age": 23},
+#             "Om": {"Marks": [4,1,45], "age": 22},
+#         }
+#     }
+# }
+
+
+
+
+# #......append dictionary from function...
+
+# std_details = [
+#     {
+#         "name": "Ganesh",
+#         "marks": [12,23,34,12],
+#     },
+#     {
+#         "name": "Omprakash",
+#         "marks": [33,11,77,99],
+#     },
+# ]
+
+# def add_fun(name, marks):
+#     new_std = {}                    # 1st
+#     new_std["name"] = name           # 2nd
+#     new_std["marks"] = marks
+#     std_details.append(new_std)        # 3rd
+
+# add_fun("payal", [22,545,999])          # from here
+# print(std_details)
 
 
 

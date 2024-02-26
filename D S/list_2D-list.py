@@ -1,16 +1,31 @@
 # print(dir(list))              # check function......... 
 
 
-# # ......access........
+# # ......access.....slicing...
 # name = ["pawan", "bisht", "Ravi", 45, 23.23]
 # print(name[2])
+# print(name[1:4])
+# print(name[:20])        # upto last
 # print(name[-1])
 
 
-# # .....replacing.........
+# # list constructor..........
+# val = list((1,2,3,4,5))
+# print(val)
+
+
+# # .....replacing or update.........
 # name = ["pawan", "bisht", "Ravi", 45, 23.23]
 # name[0] = 22222
 # print(name[0])
+# name[1:3] = [99, 11]
+# print(name)
+
+
+# # #.......insert().......
+# name = ["Pawan", "Harry", "Kavita", "fark"]
+# name.insert(1, "RAVI")
+# print(name)
 
 
 # # ....append()......
@@ -53,17 +68,14 @@
 
 
 
-# # #.......insert().......
-# name = ["Pawan", "Harry", "Kavita", "fark"]
-# name.insert(1, "RAVI")
-# print(name)
-
-
-
-# #............pop()...  remove by index....
-# name = ["Pawan", "Harry", "Kavita", "fark"]
-# name.pop(1)
-# print(name)
+#............pop()... 3 way.. remove by index....
+name = ["Pawan", "Harry", "Kavita", "fark", "cerry"]
+name.pop()              # last value
+print(name)
+name.pop(2)             # second value
+print(name)
+del name[0]             # delete 0th value
+print(name)
 
 
 # #............remove()...  remove by value....
@@ -86,10 +98,10 @@
 
 
 
-###########################################################
-#....2-D list.........
-li1 = ["Hari", "Ram", "Krishna", "Bhrama"]
-li2 = ["Rukamani", "Sita", "Radha", "Saraswati", "person"]
-gene = [li1, li2]
-print(gene)
-print(gene[1][3])                           # access 2D list element
+# ###########################################################
+# #....2-D list.........
+# li1 = ["Hari", "Ram", "Krishna", "Bhrama"]
+# li2 = ["Rukamani", "Sita", "Radha", "Saraswati", "person"]
+# gene = [li1, li2]
+# print(gene)
+# print(gene[1][3])                           # access 2D list element
