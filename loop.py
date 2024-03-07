@@ -39,13 +39,19 @@
 
 #..........range..........
 # for x in range(5):             # 0 to 4
-    #...or.....
+    # ...or.....
 # for x in range(5, 10):            # 5 to 9 
     #...or.....
 # for x in range(3, 30, 2):           # 3 to 30 but 2-step
     # print(x)
 
 
+
+
+# enumerate function..........
+li = ['d','f','e','q','k','j']
+for i,val in enumerate(li):
+    print(i, val)
 
 
 
@@ -77,7 +83,7 @@
 
 
 
-#........while loop........
+# # ........while loop........
 # i=1
 # while i<=10:
 #     print(i)
@@ -87,11 +93,11 @@
 
 
 
-#........while with else.....after executing the else, the while loop will be terminated........
-i=1
-while i<=10:
-    print(i)
-    i = i+1
-else:
-    print(f'Now i value is {i}')
-    print("now i value is",i)
+# #........while with else.....after executing the else, the while loop will be terminated........
+# i=1
+# while i<=10:
+#     print(i)
+#     i = i+1
+# else:
+#     print(f'Now i value is {i}')
+#     print("now i value is",i)

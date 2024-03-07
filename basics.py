@@ -53,10 +53,19 @@
 
 
 
-# # ....separator {sep="some_thing"}   {end="same_thing"}.....
+# # ....separator {sep="some_thing"} ........
 # print("my name is \"PAWAN\"")
 # print("my", "name", "is", sep="....")
+
+
+
+
+# #  {end="same_thing"}.....
+# print(1,2,3,4, end=" ")
+# print(5,6,7,8, end=" ")
+# print("\n")
 # print("hey", "pawan", end="||")
+
 
 
 
@@ -84,6 +93,20 @@
 
 # #......to check how many function in perticular object.......
 # print(dir(str))
+
+
+
+
+## Slicing..............
+li = ['a','b','c','d','e','f','g','h','i']
+print(li[1:5])              
+print(li[:-1])                  # apart form last  [a to h]
+print(li[:])                   # complete list
+print(li[0:-1])                 # apart from last value [a to h]
+print(li[-4:-1])                # [f,g,h]
+print(li[0:8:2])                # [a,ce,g]
+print(li[8:0:-2])               # **2 step reverse order [i,g,e,c]
+print(li[::-1])                 # **reverse     [i,h,g,f,e,d,c,b,a]
 
 
 
@@ -131,13 +154,13 @@
 
 
 
-#.......Math module.........
-import math
-# from math import function
+# #.......Math module.........
+# import math
+# # from math import function
 
-print(math.factorial(5))            # 120
-print(math.sqrt(16))                # 4.0
-print(math.ceil(3.2))               # 4
-print(math.floor(3.2))              # 3
-print(math.log(10))                 # 2.302..
-print(math.pow(2,4))                # 16
+# print(math.factorial(5))            # 120
+# print(math.sqrt(16))                # 4.0
+# print(math.ceil(3.2))               # 4
+# print(math.floor(3.2))              # 3
+# print(math.log(10))                 # 2.302..
+# print(math.pow(2,4))                # 16

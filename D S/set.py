@@ -2,11 +2,18 @@
 # print(name)
 
 
+# list to set..........
+# nameList = [2,4,5,6]
+# nameSet = set(nameList)             # change into the set
+# print(nameList)
+# print(nameSet)              
 
 
-# #........add()....if already value present then not add....otherwise random position
+
+# # #........add()....if already value present then not add....otherwise random position
 # name = {22,55,11,99,55}
 # name.add(99)
+# # name[1] = 88          # error index addition not posible
 # print(name)
 
 
@@ -49,10 +56,13 @@
 
 
 
-# #..discard()......delete that value...
-# x = {22,66,11,99,55}
-# x.discard(11)
-# print(x)
+#..discard().. remove()....delete that value...
+x = {22,66,11,99,55}
+x.discard(11)           # element not present no error
+print(x)
+
+x.remove(22)            # but element not present error comes
+print(x)
 
 
 
@@ -117,3 +127,16 @@
 # y = {22,666}
 # x.update(y)
 # print(x)
+
+
+
+# # in, &(intersection), union(), issubset(), issuperset()
+# x = {2,4,6,7,6}
+# y = {22,4,623,723,6}
+# z = {2,4}
+
+# print(9 in x)           # boolean check present or not
+# print(x & y)            # intersection
+# print(x.union(y))       # union of both 
+# print(z.issubset(x))    # is z sub-set of x
+# print(x.issuperset(z))    # is z super-set of x

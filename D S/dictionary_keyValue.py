@@ -12,6 +12,22 @@
 
 
 
+
+
+
+# #  dict() method to create dictionary............
+# dic1 = {"pawan":"bisht", 32:23, True:False}
+# print(dic1)
+
+# dic2 = dict(name= "Pawan",  age= "Mohan", )         # '=' operator use key without ""... keyword, number can't use
+# print(dic2)
+
+
+
+
+
+
+
 # #...........items().....list-[] of tuples-().....
 # name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
 # x = name.items()
@@ -36,12 +52,12 @@
 
 
 
-#...........pop().....del.......
-name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
-del name[1]             # ..or..
-x = name.pop(2)         # delete by key
-print(x)            #..pop()  item
-print(name)
+# #...........pop().....del.......
+# name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
+# del name[1]             # ..or..
+# x = name.pop(2)         # delete by key
+# print(x)            #..pop()  item
+# print(name)
 
 
 
@@ -87,10 +103,14 @@ print(name)
 
 
 
-# # #..........update().....override...
-# name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
-# name.update({2:"ON"})             #new element created
-# print(name)
+# #..........update().....override and add new element...
+name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
+name.update({2:"ON", 5:99999})             #override or new element created
+print(name)
+
+city = {99:33, 44:22, 22:11}
+name.update(city)                       
+print(name)
 
 
 
