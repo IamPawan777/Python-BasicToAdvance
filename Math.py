@@ -36,6 +36,37 @@
 
 
 
+# # find maximum.............
+# marks = [12,56,98,12,34]
+# print(max(marks))
+# max = marks[0]
+# for i in marks:
+#     if max < i:
+#         max = i
+# print(max)
+
+
+
+
+
+# grading system............
+num = int(input())
+if num > 90 and num<=100:
+    print("A grade")
+elif num<90 and num>=80:
+    print("B grade")
+elif num<80 and num>=70:
+    print("C grade")
+elif num<70 and num>=60:
+    print("D grade")
+else:
+    print("E grade")
+ 
+
+
+
+
+
 # 4............calculate true love..........
 # print(".....Welcome to the true love calculator......")
 # boy_name = input("Enter boy name:  ")
@@ -110,15 +141,15 @@
 
 
 
-# 7......... get random person (random and string)..........
-import random
-inpu = input("Enter person name (with comma and space): - ")
-name = inpu.split(', ')                    # return the list
-# index = random.randint(0, len(name)-1)          # return random index
-# ran_name = name[index]                     # get value from list
-    #..or...
-ran_name = random.choice(name)
-print(f"person is: {ran_name}")
+# # 7......... get random person (random and string)..........
+# import random
+# inpu = input("Enter person name (with comma and space): - ")
+# name = inpu.split(', ')                    # return the list
+# # index = random.randint(0, len(name)-1)          # return random index
+# # ran_name = name[index]                     # get value from list
+#     #..or...
+# ran_name = random.choice(name)
+# print(f"person is: {ran_name}")
 
 
 

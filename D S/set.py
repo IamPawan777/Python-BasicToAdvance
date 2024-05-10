@@ -10,6 +10,23 @@
 
 
 
+
+# # unique word........
+# nu = "be the change you widh to see in the world"
+# nu1 = nu.split()
+# s = set(nu1)
+
+# print(s,", ")
+
+
+set1 = {3,4,5}
+set1 += {1,2,3}
+print(set1)
+
+
+
+
+
 # # #........add()....if already value present then not add....otherwise random position
 # name = {22,55,11,99,55}
 # name.add(99)
@@ -56,13 +73,13 @@
 
 
 
-#..discard().. remove()....delete that value...
-x = {22,66,11,99,55}
-x.discard(11)           # element not present no error
-print(x)
+# #..discard().. remove()....delete that value...
+# x = {22,66,11,99,55}
+# x.discard(11)           # element not present no error
+# print(x)
 
-x.remove(22)            # but element not present error comes
-print(x)
+# x.remove(22)            # but element not present error comes
+# print(x)
 
 
 

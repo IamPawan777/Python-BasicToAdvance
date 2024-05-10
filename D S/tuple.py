@@ -59,7 +59,7 @@
 # print(val2)
            
 
-#..iterate.....
+# # ..iterate.....
 # val = tuple((1,2,3,4,5))
 # i = 0
 # while i<len(val):
@@ -76,3 +76,35 @@
 # b = (1,2,86)
 # ans = a==b
 # print(ans)
+
+
+
+
+# 
+# tu = ((2,))
+# tu = ([3,6,8],['pawan','loksg','mohan'])
+# print(type(tu))
+# print(tu[1])
+
+
+
+
+
+# # can change tuple (mutability)...but not on tuple...
+# tu = (2,3,[2,3,4])
+# tu[2][0] = "Om"
+# print(tu)
+
+
+
+# # Unpacking......assign values to different variable..
+# tu = (22,44,77,99, 'hina')
+# a,b,c,d,e = tu
+# print(a,b,c,d,e)
+
+
+
+
+
+tu2 = tu * 2
+print(tu2)

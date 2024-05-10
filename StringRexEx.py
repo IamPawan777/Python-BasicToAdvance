@@ -64,6 +64,7 @@ str2 = "HAD"
 # print(str.replace('pawan', "Harry", 2))        # --here 2 represent starting 2 times occurences "pawan" replace "Harry" string form occurences 3rd occrence "pawan" not replace
 
 # print(str.split(" "))                            # return the list....break into the List
+# print(str.split("a"))
 # print(re.split("i", str))                    # return the list....break into the List
 
 # print(str.lstrip('p'))                   # left side p is trim
@@ -94,3 +95,25 @@ str2 = "HAD"
 # print(re.sub(r"[^a-z]", "7", str))
 
 
+
+
+
+
+
+# # print all vowels
+# senta = "pawan bisht IS my Name is xusme"
+# for i in senta:
+#     if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+#         print(i, end=', ')
+
+
+
+
+# # check palimdrom
+# word = input()
+# if word == word[::-1]:
+#     print("yes palimdrom")
+# else:
+#     print("No palimdrom")
+
+ 

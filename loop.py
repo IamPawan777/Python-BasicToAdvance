@@ -44,14 +44,16 @@
     #...or.....
 # for x in range(3, 30, 2):           # 3 to 30 but 2-step
     # print(x)
+# for x in range(10, 0, -1):
+#     print(x, end=" ")
 
 
 
 
 # enumerate function..........
-li = ['d','f','e','q','k','j']
-for i,val in enumerate(li):
-    print(i, val)
+# li = ['d','f','e','q','k','j']
+# for i,val in enumerate(li):
+#     print(i, val)
 
 
 
@@ -101,3 +103,9 @@ for i,val in enumerate(li):
 # else:
 #     print(f'Now i value is {i}')
 #     print("now i value is",i)
+
+
+i = 1
+while i<=10:
+    print(i, sep=" ")
+    i+=1

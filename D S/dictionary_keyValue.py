@@ -15,7 +15,7 @@
 
 
 
-# #  dict() method to create dictionary............
+#  dict() method to create dictionary............
 # dic1 = {"pawan":"bisht", 32:23, True:False}
 # print(dic1)
 
@@ -23,6 +23,49 @@
 # print(dic2)
 
 
+
+
+# # zip().....create method..........
+# name = {"Apple", "Orange", "Banana"}
+# price = {120, 70, 30}
+# fruits = dict(zip(name, price))
+# print(fruits)
+
+
+
+
+# # iterate...........
+# val = {22:"aa",44:'pp',11:"rr",66:"WW",99:"LL",11:"QQ"}
+# for k,v in val.items():
+#     # print(i, val[i])
+#     print(k,v)
+
+
+
+# # frequency if chracters
+# s = "PAwan Singh Bishtb"
+# fre = {}
+# for i in s:
+#     # fre[i] = fre.get(i,0)+1
+#     # or
+#     if i not in fre:
+#         fre[i] = 1
+#     else:
+#         fre[i] += 1
+
+# print(fre)
+
+
+
+freshers = {
+    'student1': {'name': 'yash', 'salary': 7500},
+    'student2': {'name': 'heet', 'salary': 8000},
+    'student3': {'name':'smit', 'salary': 6500}
+}
+# freshers['student3']['salary'] = 8500
+# freshers['student3']['salary'] = 8500
+freshers['student3']['name' == 'smit']['salary'] = 8500
+print(freshers)
 
 
 
@@ -103,14 +146,15 @@
 
 
 
-# #..........update().....override and add new element...
-name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
-name.update({2:"ON", 5:99999})             #override or new element created
-print(name)
+# # #..........update().....override and add new element...
+# name = {1:"pawan", 2:"Apple", 3:"Kavi", 4:5}
+# name[4] = "OMOM"                    # 1st way if not present error
+# name.update({2:"ON", 5:99999})             # 2nd way...override or new element created
+# print(name)
 
-city = {99:33, 44:22, 22:11}
-name.update(city)                       
-print(name)
+# city = {99:33, 44:22, 22:11}
+# name.update(city)                       
+# print(name)
 
 
 
